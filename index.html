@@ -10,17 +10,15 @@
         background-color: black;
       }
       .merhaba{
-        background-color: azure;
+        background-color: black;
         position: fixed;
         bottom: 50%;
         left: 25%;
         width: 50%;
-        height: 25%;
         color: black;
       }
       .input{
         widht: 100%;
-        height: 50%;
       }
     </style>
   </head>
@@ -30,8 +28,10 @@
       <p id="paragraf"></p>
     </div>
     <script>
-      let x = document.getElementById("input").value;
-      document.getElementById("paragraf").innerHTML = x;
+      function myFunction(){
+      const x = document.getElementById("input").value;
+      document.getElementById("paragraf").textContent= x;
+      }
     </script>
   </body>
 </html>
