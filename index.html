@@ -24,7 +24,7 @@
       .tus{
         height: 100px;
         width: 100px;
-        border: 1px double green;
+        border: 3px double green;
         border-radius: 50%;
         background-color: black;
         line-height: 20px;
@@ -32,12 +32,13 @@
         margin-left: 10px;
         margin-top: 10px;
         display: inline-block;
+        color: white
       }
     </style>
   </head>
   <body class="siyahAP">
     <button onclick="beyazYap()" class="tus">Beyaz arka plan?</button>
-    <button onclick="yesilYap()" class="tus">Mavi arka plan?</button>
+    <button onclick="maviYap()" class="tus">Mavi arka plan?</button>
     <button onclick="siyahYap()" class="tus">Normal arka plan?</button>
     <script>
       function beyazYap(){
@@ -46,8 +47,8 @@
       function siyahYap(){
         document.body.classList = "siyahAP";
       }
-      function yesilYap(){
-        documemt.body.classList = "maviAP";
+      function maviYap(){
+        document.body.classList = "maviAP";
       }
     </script>
   </body>
