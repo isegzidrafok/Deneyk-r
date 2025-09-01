@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>
       Deneykâr
     </title>
     <style>
-      body{
+      .siyahAP{
         background-color: black;
         font-family: arial, sans-serif;
+        color: white;
       }
-      .merhaba{
+      .beyazAP{
+        background-color: white;
+        font-family: arial, sans-serif;
+        color: black;
+      }
+      .maviAP{
+        background-color: blue;
+        font-family: arial, sans-serif;
+        color: red;
+      }
+      .tus{
+        height: 100px;
+        width: 100px;
+        border: 1px double green;
+        border-radius: 50%;
         background-color: black;
-        position: fixed;
-        top: 2%;
-        left: 25%;
-        width: 50%;
-        height: 40%;
-      }
-      .isim{
-        width: 100%;
+        line-height: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        display: inline-block;
       }
     </style>
   </head>
-  <body>
-    <div class="merhaba">
-      <input type="text" id="isim" class="isim" placeholder="İsmini gir...">
-      <button onclick="myFunction()" style="background-color: black; width: 40%; margin-left:30%; text-align:center; border: 1px solid azure; border-radius: 8px; color:azure;">Bana da tıkla!</button>
-      <p style="text-align: center; color: azure;" id="paragraf"></p>
-    </div>
+  <body class="siyahAP">
+    <button onclick="beyazYap()" class="tus">Beyaz arka plan?</button>
+    <button onclick="yesilYap()" class="tus">Mavi arka plan?</button>
+    <button onclick="siyahYap()" class="tus">Normal arka plan?</button>
     <script>
-      function myFunction(){
-      const x = document.getElementById("isim").value;
-      document.getElementById("paragraf").textContent="Hoşgeldin, " + x + "!";
+      function beyazYap(){
+        document.body.classList = "beyazAP";
+      }
+      function siyahYap(){
+        document.body.classList = "siyahAP";
+      }
+      function yesilYap(){
+        documemt.body.classList = "maviAP";
       }
     </script>
   </body>
