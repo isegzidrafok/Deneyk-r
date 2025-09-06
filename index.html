@@ -1,56 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>
-      Deneykâr
+      deneykrWWW
     </title>
     <style>
-      .siyahAP{
-        background-color: black;
-        font-family: arial, sans-serif;
-        color: white;
-      }
-      .beyazAP{
-        background-color: white;
-        font-family: arial, sans-serif;
-        color: black;
-      }
-      .maviAP{
-        background-color: blue;
-        font-family: arial, sans-serif;
-        color: red;
-      }
-      .tus{
-        height: 100px;
-        width: 100px;
-        border: 3px double green;
-        border-radius: 50%;
-        background-color: black;
-        line-height: 20px;
-        font-size: 20px;
-        margin-left: 10px;
-        margin-top: 10px;
-        display: inline-block;
-        color: white
+      .rakamlar{
+        width: 31%;
+        height: 31%;
+        border-radius: 10px;
+        border: 1px solid white;
+        background
       }
     </style>
   </head>
-  <body class="siyahAP">
-    <button onclick="beyazYap()" class="tus">Beyaz arka plan?</button>
-    <button onclick="maviYap()" class="tus">Mavi arka plan?</button>
-    <button onclick="siyahYap()" class="tus">Normal arka plan?</button> <br> <br>
-    <p>Merhaba!!</p>
-    <script>
-      function beyazYap(){
-        document.body.classList = "beyazAP";
-      }
-      function siyahYap(){
-        document.body.classList = "siyahAP";
-      }
-      function maviYap(){
-        document.body.classList = "maviAP";
-      }
-    </script>
+  <body>
+    <div id="islemler">
+    <button onclick="rakamEkle(1)" class="rakamlar">1</button>
   </body>
 </html>
