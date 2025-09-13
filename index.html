@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      deneykrWWW
-    </title>
-    <style>
-      .rakamlar{
-        width: 31%;
-        height: 31%;
-        border-radius: 10px;
-        border: 1px solid white;
-        background
-      }
-    </style>
+  <meta charset="UTF-8">
+  <title>Deneykâr</title>
+  <style>
+    #butonum{
+      position: fixed;
+      bottom: 10px;
+      left: 30%
+      width: 40%;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      border-left: 3px solid rgb(20, 10, 170);
+      justify-content: center;
+      height: 75px;
+      background-color: rgb(30, 30, 30);
+      color: rgb(190, 190, 160);
+      font-size: 30px;
+      font-weight: bold;
+      font-family: arial, sans-serif;
+    }
+    body{
+      background-color: rgb(0, 0, 0);
+    }
+  </style>
   </head>
   <body>
-    <div id="islemler">
-    <button onclick="rakamEkle(1)" class="rakamlar">1</button>
+    <button onclick="yapayAlert()" id="butonum">Bana tıkla!</button>
+    <script>
+      function yapayAlert(){
+        const divim = document.createElement("div");
+        const butoncuk1 = document.createElement("button");
+        const butoncuk2 = document.createElement("button");
+        const paragraf = document.createElement("p");
+        paragraf.textContent = "Emin misiniz?";
+        butoncuk1.textContent = "Evet";
+        butoncuk2.textContent = "Hayır";
+        butoncuk1.classList.add("buton1class");
+        paragraf.classList.add("paragrafclass");
+        butoncuk2.classList.add("buton2class");
+        butoncuk1.onclick = function(){evet();};
+        butoncuk2.onclick = function(){hayir();};
+        divim.appendChild(paragraf);
+        divim.appendChild(butoncuk1);
+        divim.appendChild(butoncuk2);
+      };
+    </script>
   </body>
 </html>
