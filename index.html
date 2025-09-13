@@ -7,7 +7,7 @@
     <style>
       body{
         padding: 10px;
-        text-family: arial, sans-serif;
+        font-family: arial, sans-serif;
         background-color: black;
         color: white;
       }
@@ -20,7 +20,6 @@
         border-radius: 8px;
         display: inline-block;
         text-align: center;
-        justify-content: center;
         color: white;
         padding: 10px;
       }
@@ -39,12 +38,13 @@
         display: inline-block;
         padding: 10px;
         border: 1px solid white;
+        float: left;
       }
     </style>
   </head>
   <body>
     <div id="oyunYeri">
-      <div class="yerlesim"></duv><div id="kose1" class="butonlar"></div></div>
+      <div class="yerlesim"><div id="kose1" class="butonlar"></div></div>
       <div class="yerlesim"><button onclick="ekle(1)" class="butonlar" id="ekleyici1">+</button></div>
       <div class="yerlesim"><button onclick="ekle(2)" class="butonlar" id="ekleyici2">+</button></div>
       <div class="yerlesim"><div id="kose2" class="butonlar"></div></div>
