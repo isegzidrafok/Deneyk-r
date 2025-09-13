@@ -12,19 +12,17 @@
         color: white;
       }
       .butonlar{
-        flex: 1 1 calc(25% -10px);
+        width: 100%;
         border: 1px solid white;
         background-color: black;
-        height: 100px;
-        margin-top: 10px;
+        height: 90px;
         font-size: 30px;
         border-radius: 8px;
-        display: flex;
+        display: inline-block;
         text-align: center;
-        align-items: center;
         justify-content: center;
         color: white;
-        box-sizing: border-box;
+        padding: 10px;
       }
       #oyunYeri{
         width: 80%;
@@ -32,35 +30,41 @@
         margin-left: 10%;
         border: 0 solid white;
         border-radius: 0;
+        display: inline-block;
         font-size: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+      }
+      .yerlesim{
+        width: 25%;
+        height: 110px;
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid white;
       }
     </style>
   </head>
   <body>
     <div id="oyunYeri">
-      <div id="kose1" class="butonlar"></div>
-      <button onclick="ekle(1)" class="butonlar" id="ekleyici1">+</button>
-      <button onclick="ekle(2)" class="butonlar" id="ekleyici2">+</button>
-      <div id="kose2" class="butonlar"></div>
-      <button onclick="ekle(3)" class="butonlar" id="ekleyici3">+</button>
-      <button onclick="ekle(4)" class="butonlar" id="ekleyici4">+</button>
-      <button onclick="ekle(5)" class="butonlar" id="ekleyici5">+</button>
-      <button onclick="ekle(6)" class="butonlar" id="ekleyici6">+</button>
-      <button onclick="ekle(7)" class="butonlar" id="ekleyici7">+</button>
-      <button onclick="ekle(8)" class="butonlar" id="ekleyici8">+</button>
-      <button onclick="ekle(9)" class="butonlar" id="ekleyici9">+</button>
-      <button onclick="ekle(10)" class="butonlar" id="ekleyici10">+</button>
-      <div id="kose3" class="butonlar"></div>
-      <button onclick="ekle(11)" class="butonlar" id="ekleyici11">+</button>
-      <button onclick="ekle(12)" class="butonlar" id="ekleyici12">+</button>
-      <div id="kose4" class="butonlar"></div>
+      <div class="yerlesim"></duv><div id="kose1" class="butonlar"></div></div>
+      <div class="yerlesim"><button onclick="ekle(1)" class="butonlar" id="ekleyici1">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(2)" class="butonlar" id="ekleyici2">+</button></div>
+      <div class="yerlesim"><div id="kose2" class="butonlar"></div></div>
+      <div class="yerlesim"><button onclick="ekle(3)" class="butonlar" id="ekleyici3">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(4)" class="butonlar" id="ekleyici4">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(5)" class="butonlar" id="ekleyici5">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(6)" class="butonlar" id="ekleyici6">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(7)" class="butonlar" id="ekleyici7">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(8)" class="butonlar" id="ekleyici8">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(9)" class="butonlar" id="ekleyici9">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(10)" class="butonlar" id="ekleyici10">+</button></div>
+      <div class="yerlesim"><div id="kose3" class="butonlar"></div></div>
+      <div class="yerlesim"><button onclick="ekle(11)" class="butonlar" id="ekleyici11">+</button></div>
+      <div class="yerlesim"><button onclick="ekle(12)" class="butonlar" id="ekleyici12">+</button></div>
+      <div class="yerlesim"><div id="kose4" class="butonlar"></div></div>
     </div>
     <script>
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
     </script>
   </body>
-</html>
+  </html>
+  
