@@ -21,6 +21,15 @@
       font-weight: bold;
       font-family: arial, sans-serif;
     }
+    .divim{
+      border: 1px solid white;
+      background-color: black;
+      position: fixed;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+    }
     body{
       background-color: rgb(0, 0, 0);
     }
@@ -37,6 +46,7 @@
         paragraf.textContent = "Emin misiniz?";
         butoncuk1.textContent = "Evet";
         butoncuk2.textContent = "Hayır";
+        divim.classList.add("divim");
         butoncuk1.classList.add("buton1class");
         paragraf.classList.add("paragrafclass");
         butoncuk2.classList.add("buton2class");
