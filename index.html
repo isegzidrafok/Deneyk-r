@@ -12,18 +12,19 @@
         color: white;
       }
       .butonlar{
-        width: 22%;
-        margin-left: 1%;
+        flex: 1 1 calc(25% -10px);
         border: 1px solid white;
         background-color: black;
         height: 100px;
         margin-top: 10px;
         font-size: 30px;
         border-radius: 8px;
-        display: inline-block;
+        display: flex;
         text-align: center;
+        align-items: center;
         justify-content: center;
         color: white;
+        box-sizing: border-box;
       }
       #oyunYeri{
         width: 80%;
@@ -31,8 +32,10 @@
         margin-left: 10%;
         border: 0 solid white;
         border-radius: 0;
-        display: inline-block;
         font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
       }
     </style>
   </head>
