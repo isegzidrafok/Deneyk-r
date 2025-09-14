@@ -84,6 +84,9 @@
       const baslatici = document.getElementById("baslatici");
       const oyunYeri = document.getElementById("oyunYeri");
       const kose1 = document.getElementById("kose1");
+      const kose2 = document.getElementById("kose2");
+      const kose3 = document.getElementById("kose3");
+      const kose4 = document.getElementById("kose4");
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
@@ -99,6 +102,42 @@
           kose1.style.backgroundColor = "blue";
         };
         kose1.textContent = sayi1;
+        const renk2 = renkler[Math.floor(Math.random() * 4)];
+        const sayi2 = sayilar[Math.floor(Math.random() * 4)];
+        if(renk2==="yesil"){
+          kose2.style.backgroundColor = "green";
+        }else if(renk2==="kirmizi"){
+          kose2.style.backgroundColor = "red";
+        }else if(renk2==="gri"){
+          kose2.style.backgroundColor = "rgb(100, 100, 100)";
+        }else{
+          kose2.style.backgroundColor = "blue";
+        };
+        kose2.textContent = sayi2;
+        const renk3 = renkler[Math.floor(Math.random() * 4)];
+        const sayi3 = sayilar[Math.floor(Math.random() * 4)];
+        if(renk3==="yesil"){
+          kose3.style.backgroundColor = "green";
+        }else if(renk3==="kirmizi"){
+          kose3.style.backgroundColor = "red";
+        }else if(renk3==="gri"){
+          kose3.style.backgroundColor = "rgb(100, 100, 100)";
+        }else{
+          kose3.style.backgroundColor = "blue";
+        };
+        kose3.textContent = sayi3;
+        const renk4 = renkler[Math.floor(Math.random() * 4)];
+        const sayi4 = sayilar[Math.floor(Math.random() * 4)];
+        if(renk4==="yesil"){
+          kose4.style.backgroundColor = "green";
+        }else if(renk4==="kirmizi"){
+          kose4.style.backgroundColor = "red";
+        }else if(renk4==="gri"){
+          kose4.style.backgroundColor = "rgb(100, 100, 100)";
+        }else{
+          kose4.style.backgroundColor = "blue";
+        };
+        kose4.textContent = sayi4;
       };
     </script>
   </body>
