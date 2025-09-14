@@ -54,7 +54,28 @@
         height: 50px;
         font-size: 25px;
         display: block;
-        justify-content: center;
+      }
+      #el1{
+        display: none;
+        height: 180px;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 10px;
+        font-size: 0;
+        background-color: rgb(40, 10, 100);
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 0;
+      }
+      .kartlar{
+        display: inline-block;
+        border: 1px solid white;
+        height: 75px;
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        width: 100%;
       }
     </style>
   </head>
@@ -77,16 +98,35 @@
       <div class="yerlesim"><button onclick="ekle(12)" class="butonlar" id="ekleyici12">+</button></div>
       <div class="yerlesim"><button id="kose4" class="butonlar"></button></div>
     </div>
+    <div id="el1">
+      <button onclick="kartlar(1)" id="kart1" class="kartlar">meb</button>
+      <button onclick="kartlar(2)" id="kart2" class="kartlar">nam</button>
+      <button onclick="kartlar(3)" id="kart3" class="kartlar">sum</button>
+      <button onclick="kartlar(4)" id="kart4" class="kartlar">ded</button>
+      <button onclick="kartlar(5)" id="kart5" class="kartlar">pos</button>
+      <button onclick="kartlar(6)" id="kart6" class="kartlar">kaf</button>
+      <button onclick="kartlar(7)" id="kart7" class="kartlar">juy</button>
+      <button onclick="kartlar(8)" id="kart8" class="kartlar">giv</button>
+    </div>
     <button onclick="baslat()" id="baslatici">Oyunu başlat</button>
     <script>
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
       const baslatici = document.getElementById("baslatici");
+      const el1 = document.getElementById("el1");
       const oyunYeri = document.getElementById("oyunYeri");
       const kose1 = document.getElementById("kose1");
       const kose2 = document.getElementById("kose2");
       const kose3 = document.getElementById("kose3");
       const kose4 = document.getElementById("kose4");
+      let birde1 = false;
+      let birde2 = false;
+      let birde3 = false;
+      let birde4 = false;
+      let birde5 = false;
+      let birde6 = false;
+      let birde7 = false;
+      let birde8 = false;
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
@@ -138,6 +178,8 @@
           kose4.style.backgroundColor = "blue";
         };
         kose4.textContent = sayi4;
+        el1.style.display = "block";
+        };
       };
     </script>
   </body>
