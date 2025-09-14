@@ -16,7 +16,7 @@
         border: 1px solid white;
         background-color: black;
         height: 90px;
-        font-size: 30px;
+        font-size: 40px;
         border-radius: 8px;
         display: inline-block;
         text-align: center;
@@ -83,9 +83,17 @@
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
       const baslatici = document.getElementById("baslatici");
       const oyunYeri = document.getElementById("oyunYeri");
+      const kose1 = document.getElementById("kose1");
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
+        const renk1 = Math.random(...renkler);
+        const sayi1 = Math.random(...sayilar);
+        if(renk1==="yesil"){
+          kose1.style.backgroundColor = "green";
+        }else if(renk1==="kirmizi"){
+          kose1.style.backgroundColor = "red";
+        }
       };
     </script>
   </body>
