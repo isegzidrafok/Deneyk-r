@@ -29,7 +29,7 @@
         margin-left: 2%;
         border: 0 solid white;
         border-radius: 0;
-        display: inline-block;
+        display: none;
         font-size: 0;
       }
       .yerlesim{
@@ -82,8 +82,10 @@
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
       const baslatici = document.getElementById("baslatici");
+      const oyunYeri = document.getElementById("oyunYeri");
       function baslat(){
         baslatici.style.display = "none";
+        oyunYeri.style.display = "inline-block";
       };
     </script>
   </body>
