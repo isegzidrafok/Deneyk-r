@@ -87,8 +87,8 @@
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
-        const renk1 = Math.random(...renkler);
-        const sayi1 = Math.random(...sayilar);
+        const renk1 = renkler[Math.floor(Math.random() * 4)];
+        const sayi1 = sayilar[Math.floor(Math.random() * 4)];
         if(renk1==="yesil"){
           kose1.style.backgroundColor = "green";
         }else if(renk1==="kirmizi"){
