@@ -127,6 +127,18 @@
       const kart6 = document.getElementById("kart6");
       const kart7 = document.getElementById("kart7");
       const kart8 = document.getElementById("kart8");
+      const ekleyici1 = document.getElementById("ekleyici1");
+      const ekleyici2 = document.getElementById("ekleyici2");
+      const ekleyici3 = document.getElementById("ekleyici3");
+      const ekleyici4 = document.getElementById("ekleyici4");
+      const ekleyici5 = document.getElementById("ekleyici5");
+      const ekleyici6 = document.getElementById("ekleyici6");
+      const ekleyici7 = document.getElementById("ekleyici7");
+      const ekleyici8 = document.getElementById("ekleyici8");
+      const ekleyici9 = document.getElementById("ekleyici9");
+      const ekleyici10 = document.getElementById("ekleyici10");
+      const ekleyici11 = document.getElementById("ekleyici11");
+      const ekleyici12 = document.getElementById("ekleyici12");
       let birde1 = false;
       let birde2 = false;
       let birde3 = false;
@@ -135,6 +147,9 @@
       let birde6 = false;
       let birde7 = false;
       let birde8 = false;
+      let ekleyici1Yazi, ekleyici2Yazi, ekleyici3Yazi, ekleyici4Yazi,
+        ekleyici5Yazi, ekleyici6Yazi, ekleyici7Yazi, ekleyici8Yazi,
+         ekleyici9Yazi, ekleyici10Yazi, ekleyici11Yazi, ekleyici12Yazi;                                      
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
@@ -187,6 +202,39 @@
         };
         kose4.textContent = sayi4;
         el1.style.display = "block";
+        yazi1 = sayilar[Math.floor(Math.random()*10)];
+        reng1 = renkler[Math.floor(Math.random()*4)];
+        yazi2 = sayilar[Math.floor(Math.random()*10)];
+        reng2 = renkler[Math.floor(Math.random()*4)];
+        yazi3 = sayilar[Math.floor(Math.random()*10)];
+        reng3 = renkler[Math.floor(Math.random()*4)];
+        yazi4 = sayilar[Math.floor(Math.random()*10)];
+        reng4 = renkler[Math.floor(Math.random()*4)];
+        yazi5 = sayilar[Math.floor(Math.random()*10)];
+        reng5 = renkler[Math.floor(Math.random()*4)];
+        yazi6 = sayilar[Math.floor(Math.random()*10)];
+        reng6 = renkler[Math.floor(Math.random()*4)];
+        yazi7 = sayilar[Math.floor(Math.random()*10)];
+        reng7 = renkler[Math.floor(Math.random()*4)];
+        yazi8 = sayilar[Math.floor(Math.random()*10)];
+        reng8 = renkler[Math.floor(Math.random()*4)];
+        yazi9 = sayilar[Math.floor(Math.random()*10)];
+        reng9 = renkler[Math.floor(Math.random()*4)];
+        yazi10 = sayilar[Math.floor(Math.random()*10)];
+        reng10 = renkler[Math.floor(Math.random()*4)];
+        yazi11 = sayilar[Math.floor(Math.random()*10)];
+        reng11 = renkler[Math.floor(Math.random()*4)];
+        yazi12 = sayilar[Math.floor(Math.random()*10)];
+        reng12 = renkler[Math.floor(Math.random()*4)];
+        if(reng1==="yesil"){
+          
+        }else if(reng1==="kirmizi"){
+          
+        }else if(reng1==="gri"){
+          
+        }else{ //mavi
+          
+        };
         };
       function kartlar(id){
         if(id===1){
@@ -335,6 +383,17 @@
           kart7.style.border = "1px solid white";
           kart2.style.border = "1px solid white";
         };
+      };
+      function ekle(num){
+        if(birde1){
+          if(num===1){
+            ekleyici1
+          }else if(num===2){
+            
+          }else if(num===3){}
+        }else if(birde2){
+          
+        }
       };
     </script>
   </body>
