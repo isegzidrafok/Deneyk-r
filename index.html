@@ -56,7 +56,7 @@
       }
       #el1{
         display: none;
-        height: 180px;
+        height: 220px;
         width: 96%;
         margin-left: 2%;
         margin-top: 10px;
@@ -98,14 +98,14 @@
       <div class="yerlesim"><button id="kose4" class="butonlar"></button></div>
     </div>
     <div id="el1">
-      <button onclick="kartlar(1)" id="kart1" class="kartlar">meb</button>
-      <button onclick="kartlar(2)" id="kart2" class="kartlar">nam</button>
-      <button onclick="kartlar(3)" id="kart3" class="kartlar">sum</button>
-      <button onclick="kartlar(4)" id="kart4" class="kartlar">ded</button>
-      <button onclick="kartlar(5)" id="kart5" class="kartlar">pos</button>
-      <button onclick="kartlar(6)" id="kart6" class="kartlar">kaf</button>
-      <button onclick="kartlar(7)" id="kart7" class="kartlar">juy</button>
-      <button onclick="kartlar(8)" id="kart8" class="kartlar">giv</button>
+      <div class="yerlesim"><button onclick="kartlar(1)" id="kart1" class="kartlar">meb</button></div>
+      <div class="yerlesim"><button onclick="kartlar(2)" id="kart2" class="kartlar">nam</button></div>
+      <div class="yerlesim"><button onclick="kartlar(3)" id="kart3" class="kartlar">sum</button></div>
+      <div class="yerlesim"><button onclick="kartlar(4)" id="kart4" class="kartlar">ded</button></div>
+      <div class="yerlesim"><button onclick="kartlar(5)" id="kart5" class="kartlar">pos</button></div>
+      <div class="yerlesim"><button onclick="kartlar(6)" id="kart6" class="kartlar">kaf</button></div>
+      <div class="yerlesim"><button onclick="kartlar(7)" id="kart7" class="kartlar">juy</button></div>
+      <div class="yerlesim"><button onclick="kartlar(8)" id="kart8" class="kartlar">giv</button></div>
     </div>
     <button onclick="baslat()" id="baslatici">Oyunu başlat</button>
     <script>
@@ -177,6 +177,7 @@
           kose4.style.backgroundColor = "blue";
         };
         kose4.textContent = sayi4;
+        el1.style.display = "block";
         };
     </script>
   </body>
