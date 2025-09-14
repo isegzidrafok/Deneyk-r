@@ -227,14 +227,15 @@
         yazi12 = sayilar[Math.floor(Math.random()*10)];
         reng12 = renkler[Math.floor(Math.random()*4)];
         if(reng1==="yesil"){
-          
+          kart1.style.backgroundColor = "green";
         }else if(reng1==="kirmizi"){
-          
+          kart1.style.backgroundColor = "red";
         }else if(reng1==="gri"){
-          
+          kart1.style.backgroundColor = "rgb(100, 100, 100)";
         }else{ //mavi
-          
+          kart1.style.backgroundColor = "blue";
         };
+        kart1.textContent = yazi1;
         };
       function kartlar(id){
         if(id===1){
@@ -387,13 +388,55 @@
       function ekle(num){
         if(birde1){
           if(num===1){
-            ekleyici1
-          }else if(num===2){
-            
-          }else if(num===3){}
+            const deger1 = kart1.textContent;
+            ekleyici1.textContent = deger1;
+            if(kart1.style.backgroundColor=="green"){
+              ekleyici1.style.backgroundColor=="green";
+            }else if(kart1.style.backgroundColor=="blue"){
+              ekleyici1.style.backgroundColor=="blue";
+            }else if(kart1.style.backgroundColor=="red"){
+              ekleyici1.style.backgroundColor=="red";
+            }else{
+              ekleyici1.style.backgroundColor=="rgb(100, 100, 100)";
+            };}
+            if(num===2){
+            const deger2 = kart1.textContent;
+            ekleyici2.textContent = deger2;
+            if(kart1.style.backgroundColor=="green"){
+              ekleyici2.style.backgroundColor=="green";
+            }else if(kart1.style.backgroundColor=="blue"){
+              ekleyici2.style.backgroundColor=="blue";
+            }else if(kart1.style.backgroundColor=="red"){
+              ekleyici2.style.backgroundColor=="red";
+            }else{
+              ekleyici1.style.backgroundColor=="rgb(100, 100, 100)";
+            };} else if(num===3){
+            const deger3 = kart1.textContent;
+            ekleyici3.textContent = deger3;
+            if(kart1.style.backgroundColor=="green"){
+              ekleyici3.style.backgroundColor=="green";
+            }else if(kart1.style.backgroundColor=="blue"){
+              ekleyici3.style.backgroundColor=="blue";
+            }else if(kart1.style.backgroundColor=="red"){
+              ekleyici3.style.backgroundColor=="red";
+            }else{
+              ekleyici1.style.backgroundColor=="rgb(100, 100, 100)";
+            };}else if(num===4){
+              const deger4 = kart1.textContent;
+            ekleyici4.textContent = deger4;
+            if(kart1.style.backgroundColor=="green"){
+              ekleyici4.style.backgroundColor=="green";
+            }else if(kart1.style.backgroundColor=="blue"){
+              ekleyici4.style.backgroundColor=="blue";
+            }else if(kart1.style.backgroundColor=="red"){
+              ekleyici4.style.backgroundColor=="red";
+            }else{
+              ekleyici1.style.backgroundColor=="rgb(100, 100, 100)";
+            };}
+            }else if(num===5){}
         }else if(birde2){
           
-        }
+        }else if(birde3){}
       };
     </script>
   </body>
