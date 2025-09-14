@@ -41,6 +41,21 @@
         float: left;
         box-sizing: border-box;
       }
+      #baslatici{
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 25%;
+        width: 50%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 45px;
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -62,9 +77,14 @@
       <div class="yerlesim"><button onclick="ekle(12)" class="butonlar" id="ekleyici12">+</button></div>
       <div class="yerlesim"><button id="kose4" class="butonlar"></button></div>
     </div>
+    <button onclick="baslat()" id="baslatici">Oyunu başlat</button>
     <script>
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
+      const baslatici = document.getElementById("baslatici");
+      function baslat(){
+        baslatici.style.display = "none":
+      };
     </script>
   </body>
   </html>
