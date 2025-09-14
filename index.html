@@ -75,6 +75,7 @@
         padding: 10px;
         color: white;
         width: 100%;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -118,6 +119,14 @@
       const kose2 = document.getElementById("kose2");
       const kose3 = document.getElementById("kose3");
       const kose4 = document.getElementById("kose4");
+      const kart1 = document.getElementById("kart1");
+      const kart2 = document.getElementById("kart2");
+      const kart3 = document.getElementById("kart3");
+      const kart4 = document.getElementById("kart4");
+      const kart5 = document.getElementById("kart5");
+      const kart6 = document.getElementById("kart6");
+      const kart7 = document.getElementById("kart7");
+      const kart8 = document.getElementById("kart8");
       let birde1 = false;
       let birde2 = false;
       let birde3 = false;
@@ -179,6 +188,11 @@
         kose4.textContent = sayi4;
         el1.style.display = "block";
         };
+      function kartlar(id){
+        if(id===1){
+          kart1.style.border = "3px double yellow";
+        }else{};
+      };
     </script>
   </body>
   </html>
