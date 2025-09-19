@@ -1603,13 +1603,20 @@
         };
       if(ekleyici1.textContent!=="+"){
         ekleyici1.onclick = null;
+        ekleyici1.addEventListener("click", eklenemez);
       }; if(ekleyici2.textContent!=="+"){
         ekleyici2.onclick = null;
+        ekleyici2.addEventListener("click", eklenemez);
       }; if(ekleyici3.textContent!=="+"){
         ekleyici3.onclick = null;
+        ekleyici3.addEventListener("click", eklenemez);
       }; if(ekleyici4.textContent!=="+"){
         ekleyici4.onclick = null;
+        ekleyici3.addEventListener("click", eklenemez);
       };
+      };
+      function eklenemez(){
+        alert("Burası daha önceden dolduruldu!");
       };
     </script>
   </body>
