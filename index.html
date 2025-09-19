@@ -1626,10 +1626,21 @@
         let eRenk12 = ekleyici12.style.backgroundColor;
         let eYazi12 = ekleyici12.textContent;
         let kRenk1 = kose1.style.backgroundColor;
-        
+        let kYazi1 = kose1.textContent;
+        let kRenk4 = kose4.style.backgroundColor;
+        let kYazi4 = kose4.textContent;
+        let kRenk3 = kose3.style.backgroundColor;
+        let kYazi3 = kose3.textContent;
+        let kRenk2 = kose2.style.backgroundColor;
+        let kYazi2 = kose2.textContent;
       if(eYazi1!=="+"){
         ekleyici1.onclick = null;
         ekleyici1.addEventListener("click", eklenemez);
+        if((eYazi1==kYazi1 || eRenk1==kRenk1) ||
+          (eYazi1==eYazi2 || eRenk1==eRenk2) ||
+           (eYazi1==eYazi4 || eRenk1==eRenk4)){
+          el1.style.visibility = "hidden";
+        };
       }; if(eYazi2!=="+"){
         ekleyici2.onclick = null;
         ekleyici2.addEventListener("click", eklenemez);
@@ -1640,29 +1651,29 @@
         ekleyici4.onclick = null;
         ekleyici4.addEventListener("click", eklenemez);
       };
-        if(ekleyici5.textContent!=="+"){
+        if(eYazi5!=="+"){
         ekleyici5.onclick = null;
         ekleyici5.addEventListener("click", eklenemez);
-      }; if(ekleyici6.textContent!=="+"){
+      }; if(eYazi6!=="+"){
         ekleyici6.onclick = null;
         ekleyici6.addEventListener("click", eklenemez);
-      }; if(ekleyici7.textContent!=="+"){
+      }; if(eYazi7!=="+"){
         ekleyici7.onclick = null;
         ekleyici7.addEventListener("click", eklenemez);
-      }; if(ekleyici8.textContent!=="+"){
+         if(eYazi8!=="+"){
         ekleyici8.onclick = null;
         ekleyici8.addEventListener("click", eklenemez);
       };
-        if(ekleyici9.textContent!=="+"){
+        if(eYazi9!=="+"){
         ekleyici9.onclick = null;
         ekleyici9.addEventListener("click", eklenemez);
-      }; if(ekleyici10.textContent!=="+"){
+      }; if(eYazi10!=="+"){
         ekleyici10.onclick = null;
         ekleyici10.addEventListener("click", eklenemez);
-      }; if(ekleyici11.textContent!=="+"){
+      }; if(eYazi11!=="+"){
         ekleyici11.onclick = null;
         ekleyici11.addEventListener("click", eklenemez);
-      }; if(ekleyici12.textContent!=="+"){
+      }; if(eYazi12!=="+"){
         ekleyici12.onclick = null;
         ekleyici12.addEventListener("click", eklenemez);
       };
