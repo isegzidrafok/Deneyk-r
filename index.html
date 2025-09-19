@@ -79,10 +79,10 @@
       }
       #hata{
         color: rgb(170, 10, 30);
-        display: block;
+        display: none;
         padding: 10px;
         text-align: center;
-        font-size: 20px;
+        font-size: 50px;
         background-color: rgb(30, 10, 10);
         border-radius: 10px;
         border: 1px solid rgb(250, 200, 200);
@@ -1655,6 +1655,7 @@
           el2.style.visibility = "visible";
         }else{
           el1.style.display = "none";
+          document.getElementById("hata").style.display="block";
           document.getElementById("hata").textContent="Hatalı yerleştirme!";
         };
       }; if(eYazi2!=="+"){
