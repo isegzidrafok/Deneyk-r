@@ -1651,12 +1651,11 @@
         if((eYazi1==kYazi1 || eRenk1==kRenk1) ||
           (eYazi1==eYazi2 || eRenk1==eRenk2) ||
            (eYazi1==eYazi4 || eRenk1==eRenk4)){
-          el1.style.visibility = "hidden";
-          el2.style.visibility = "visible";
+          
         }else{
-          el1.style.display = "none";
+          el1.style.backgroundColor="rgb(0, 0, 0)";
           document.getElementById("hata").style.display="block";
-          document.getElementById("hata").textContent="Hatalı yerleştirme!";
+          ekleyici1.onclick= null;
         };
       }; if(eYazi2!=="+"){
         ekleyici2.onclick = null;
