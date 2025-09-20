@@ -1644,6 +1644,7 @@
         let kYazi3 = kose3.textContent;
         let kRenk2 = kose2.style.backgroundColor;
         let kYazi2 = kose2.textContent;
+        let hataVar= false;
       if(eYazi1!=="+"){
         ekleyici1.onclick = null;
         ekleyici1.addEventListener("click", eklenemez);
@@ -1652,13 +1653,18 @@
            (eYazi1==eYazi4 || eRenk1==eRenk4)){
           
         }else{
-          el1.style.backgroundColor="rgb(0, 0, 0)";
-          document.getElementById("hata").style.display="block";
-          ekleyici1.onclick= null;
+          hataVar=true;
         };
       }; if(eYazi2!=="+"){
         ekleyici2.onclick = null;
         ekleyici2.addEventListener("click", eklenemez);
+        if((eYazi2==eYazi1 || eRenk2==eRenk1) ||
+          (eYazi2==kYazi2 || eRenk2==kRenk2) ||
+           (eYazi2==eYazi5 || eRenk2==eRenk5)){
+          
+        }else{
+          hataVar=true;
+        };
       }; if(eYazi3!=="+"){
         ekleyici3.onclick = null;
         ekleyici3.addEventListener("click", eklenemez);
@@ -1691,6 +1697,15 @@
       }; if(eYazi12!=="+"){
         ekleyici12.onclick = null;
         ekleyici12.addEventListener("click", eklenemez);
+      }; if(hataVar){
+          el1.style.backgroundColor="rgb(0, 0, 0)";
+          hata.style.display="block";
+          let allButtons = document.querySelectorAll("body button");
+          allButtons.forEach(butonSil=>{
+  const silik = butonSil.cloneNode(true);
+            butonSil.replaceWith(silik);
+          });
+         yeniOyun.style.display = "block";
       };
       };
       function eklenemez(){
