@@ -87,6 +87,18 @@
         border-radius: 10px;
         border: 1px solid rgb(250, 200, 200);
       }
+      #yeniOyun{
+        display: none;
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5px;
+        background-color: rgb(0, 150, 50);
+        border: 1px solid white;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -119,6 +131,9 @@
       <div class="yerlesim"><button onclick="kartlar(8)" id="kart8" class="kartlar">giv</button></div>
     </div>
      <p id="hata">Hatalı yerleştirme!</p>
+    <a href="https://isegzidrafok.github.io/Deneyk-r/" id="yeniOyun">
+      Yeni oyun başlat...
+    </a>
     <button onclick="baslat()" id="baslatici">Oyunu başlat</button>
     <script>
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
@@ -160,6 +175,7 @@
       let birde8 = false;
       let deger1, deger2, deger3, deger4, deger5, deger6,
         deger7, deger8, deger9, deger10, deger11, deger12;
+      const yeniOyun = document.getElementById("yeniOyun");
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
