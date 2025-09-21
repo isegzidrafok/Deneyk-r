@@ -78,7 +78,7 @@
         border-radius: 10px;
       }
       #hata{
-        color: rgb(170, 10, 30);
+        color: rgb(250, 140, 140);
         display: none;
         padding: 10px;
         text-align: center;
@@ -1686,6 +1686,13 @@
       }; if(eYazi3!=="+"){
         ekleyici3.onclick = null;
         ekleyici3.addEventListener("click", eklenemez);
+        if((eYazi3==kYazi1 || eRenk3==kRenk1)||
+           (eYazi3==eYazi4 || eRenk3==eRenk4)||
+           (eYazi3==eYazi7 || eRenk3==eRenk7)){
+          
+           }else{
+          hataVar=true;
+           };
       }; if(eYazi4!=="+"){
         ekleyici4.onclick = null;
         ekleyici4.addEventListener("click", eklenemez);
@@ -1716,7 +1723,6 @@
         ekleyici12.onclick = null;
         ekleyici12.addEventListener("click", eklenemez);
       }; if(hataVar){
-          el1.style.backgroundColor="rgb(0, 0, 0)";
           hata.style.display="block";
           let allButtons = document.querySelectorAll("body button");
           allButtons.forEach(butonSil=>{
