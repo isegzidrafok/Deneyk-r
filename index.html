@@ -55,7 +55,6 @@
       }
       #el1{
         display: none;
-        height: 220px;
         width: 96%;
         margin-left: 2%;
         margin-top: 10px;
@@ -178,9 +177,11 @@
       let deger1, deger2, deger3, deger4, deger5, deger6,
         deger7, deger8, deger9, deger10, deger11, deger12;
       const yeniOyun = document.getElementById("yeniOyun");
+      const rehber = document.getElementById("rehber");
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
+        rehber.style.display = "none";
         const renk1 = renkler[Math.floor(Math.random() * 4)];
         const sayi1 = sayilar[Math.floor(Math.random() * 10)];
         if(renk1==="yesil"){
