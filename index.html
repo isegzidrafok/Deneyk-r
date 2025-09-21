@@ -40,7 +40,7 @@
         border: 0 solid white;
         box-sizing: border-box;
       }
-      #baslatici{
+      .baslatici{
         border: 1px solid white;
         border-radius: 5px;
         margin-top: 10px;
@@ -135,7 +135,8 @@
     <a href="https://isegzidrafok.github.io/Deneyk-r/" id="yeniOyun">
       Yeni oyun başlatmak için tıklayınız...
     </a>
-    <button onclick="baslat()" id="baslatici">Oyunu başlat</button>
+    <button onclick="baslat()" id="baslatici" class="baslatici">Oyunu başlat</button>
+    <button onclick="rehber()" id="rehber" class="baslatici">Nasıl oynanır?</button>
     <script>
       const renkler = ["yesil", "mavi", "kirmizi", "gri"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
