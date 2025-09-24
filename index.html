@@ -411,8 +411,8 @@
           birde8 = true;
         };
         if(birde1){
-          kart1.style.border = "1px solid rgb(10, 150, 150)";
-          kart1.style.color="rgb(150, 150, 10)";
+          kart1.style.border = "2px solid yellow";
+          kart1.style.color="rgb(240, 200, 250)";
           kart2.style.border = "1px solid white";
           kart3.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
@@ -422,8 +422,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde2){
           kart1.style.border = "1px solid white";
-          kart2.style.border = "1px solid rgb(10, 150, 150)";
-          kart2.style.color="rgb(10, 150, 150)";
+          kart2.style.border = "2px solid yellow";
+          kart2.style.color="rgb(240, 200, 250)";
           kart3.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
           kart5.style.border = "1px solid white";
@@ -432,8 +432,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde3){
           kart1.style.border = "1px solid white";
-          kart3.style.border = "1px solid rgb(10, 150, 150)";
-          kart3.style.color="rgb(10, 150, 150)";
+          kart3.style.border = "2px solid yellow";
+          kart3.style.color="rgb(240, 200, 250)";
           kart2.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
           kart5.style.border = "1px solid white";
@@ -442,8 +442,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde4){
           kart1.style.border = "1px solid white";
-          kart4.style.border = "1px solid rgb(10, 150, 150)";
-          kart4.style.color="rgb(10, 150, 150)";
+          kart4.style.border = "2px solid yellow";
+          kart4.style.color="rgb(240, 200, 250)";
           kart3.style.border = "1px solid white";
           kart2.style.border = "1px solid white";
           kart5.style.border = "1px solid white";
@@ -452,7 +452,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde5){
           kart1.style.border = "1px solid white";
-          kart5.style.border = "5px dashed rgb(150, 75, 100)";
+          kart5.style.border = "2px solid yellow";
+          kart5.style.color="rgb(240, 200, 250)";
           kart3.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
           kart2.style.border = "1px solid white";
@@ -461,7 +462,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde6){
           kart1.style.border = "1px solid white";
-          kart6.style.border = "5px dashed rgb(150, 75, 100)";
+          kart6.style.border = "2px solid yellow";
+          kart6.style.color="rgb(240, 200, 250)";
           kart3.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
           kart5.style.border = "1px solid white";
@@ -470,7 +472,8 @@
           kart8.style.border = "1px solid white";
         }else if(birde7){
           kart1.style.border = "1px solid white";
-          kart7.style.border = "5px dashed rgb(150, 75, 100)";
+          kart7.style.border = "1px solid yellow";
+          kart7.style.color="rgb(240, 200, 250)";
           kart3.style.border = "1px solid white";
           kart4.style.border = "1px solid white";
           kart5.style.border = "1px solid white";
@@ -478,15 +481,14 @@
           kart2.style.border = "1px solid white";
           kart8.style.border = "1px solid white";
         }else if(birde8){
-          kart1.style.border = "1px solid white";
-          kart8.style.border = "5px dashed rgb(150, 75, 100)";
-          kart3.style.border = "1px solid white";
-          kart4.style.border = "1px solid white";
-          kart5.style.border = "1px solid white";
-          kart6.style.border = "1px solid white";
-          kart7.style.border = "1px solid white";
-          kart2.style.border = "1px solid white";
-        };
+          kart8.style.border = "1px solid yellow";
+          kart8.style.color="rgb(240, 200, 250)";
+          let kutucuk=Array.from(document.querySelectorAll("#el1 button")).filter(kart => kart != kart8);
+          kutucuk.forEach(kartlar => {
+            kartlar.style.border="1px solid white";
+            kartlar.style.color="white";
+        })
+      };
       };
       function ekle(num){
         if(birde1){
