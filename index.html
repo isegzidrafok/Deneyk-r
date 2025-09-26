@@ -98,9 +98,13 @@
         box-sizing: border-box;
         text-decoration: none;
         color: white;
+        animation: yenilenme 2s linear 1;
       } @keyframes yenilen{
         0%{color: black; border: 1px solid black;}
         100%{color: rgb(255, 255, 50); border: 1px solid rgb(255, 255, 50);}
+      } @keyframes yenilenme{
+        0%{color: black; background-color: black; border: 1px solid black;}
+        100%{color: white; background-color: rgb(0, 150, 50); border: 1px solid white;}
       }
     </style>
   </head>
@@ -1731,7 +1735,7 @@
   const silik = butonSil.cloneNode(true);
             butonSil.replaceWith(silik);
           });
-         yeniOyun.style.display = "block";
+         setTimeout(() => {yeniOyun.style.display = "block";}, 1000)
       };
       };
       function eklenemez(){
