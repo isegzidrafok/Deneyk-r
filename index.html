@@ -76,14 +76,12 @@
         border-radius: 10px;
       }
       #hata{
-        color: rgb(250, 140, 140);
         display: none;
         padding: 10px;
         text-align: center;
         font-size: 50px;
-        background-color: rgb(30, 10, 10);
         border-radius: 10px;
-        border: 1px solid rgb(250, 200, 200);
+        animation: yenilen 2s linear infinite;
       }
       #yeniOyun{
         display: none;
@@ -98,6 +96,9 @@
         box-sizing: border-box;
         text-decoration: none;
         color: white;
+      } @keyframes yenilen{
+        0%{color: black; border: 1px solid black;}
+        100%{color: rgb(100, 0, 0); border: 1px solid rgb(100, 0, 0);}
       }
     </style>
   </head>
