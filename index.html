@@ -1699,7 +1699,7 @@
           ekleyici3.style.color=ekleyici3.style.backgroundColor;
       ekleyici3.style.backgroundColor="rgb(255, 255, 50)";
            };
-      }; let bugEngelleyici1=false; if(eYazi4!=="+"){
+      }; if(eYazi4!=="+"){
         ekleyici4.onclick = null;
         ekleyici4.addEventListener("click", eklenemez);
         if(!bugEngelleyici1){if(eYazi1=="+" && eYazi3=="+" && eYazi5=="+" && eYazi8=="+"){
@@ -1750,6 +1750,10 @@
          setTimeout(() => {yeniOyun.style.display = "block";}, 1000)
       };
       };
+      let bugEngelleyici1=false;
+      let bugEngelleyici2=false;
+      let bugEngelleyici3=false;
+      let bugEngelleyici4=false;
       function eklenemez(){
         alert("Burası daha önceden dolduruldu!");
       };
