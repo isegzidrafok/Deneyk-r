@@ -1699,21 +1699,21 @@
           ekleyici3.style.color=ekleyici3.style.backgroundColor;
       ekleyici3.style.backgroundColor="rgb(255, 255, 50)";
            };
-      }; if(eYazi4!=="+"){
+      }; let bugEngelleyici1=false; if(eYazi4!=="+"){
         ekleyici4.onclick = null;
         ekleyici4.addEventListener("click", eklenemez);
-        if(eYazi1=="+" && eYazi3=="+" && eYazi5=="+" && eYazi8=="+"){
-  
+        if(!bugEngelleyici1){if(eYazi1=="+" && eYazi3=="+" && eYazi5=="+" && eYazi8=="+"){
+  bugEngelleyici1=true;
         }else if((eYazi4==eYazi1 || eRenk4==eRenk1)||
                  (eYazi4==eYazi3 || eRenk4==eRenk3)||
                  (eYazi4==eYazi5 || eRenk4==eRenk5)||
                  (eYazi4==eYazi8 || eRenk4==eRenk8)){
-          
+          bugEngelleyici1=true;
         }else{
           hataVar=true;
   ekleyici4.style.color=ekleyici4.style.backgroundColor;
           ekleyici4.style.backgroundColor="rgb(255, 255, 50)";
-        };
+        };}
       };
         if(eYazi5!=="+"){
         ekleyici5.onclick = null;
