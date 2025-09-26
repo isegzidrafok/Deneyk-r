@@ -1673,7 +1673,7 @@
         }else{
           hataVar=true;
           ekleyici1.style.color=ekleyici1.style.backgroundColor;
-          ekleyici1.style.backgroundColor="rgb(255, 255, 200)";
+          ekleyici1.style.backgroundColor="rgb(255, 255, 50)";
         };
       }; if(eYazi2!=="+"){
         ekleyici2.onclick = null;
@@ -1685,7 +1685,7 @@
         }else{
           hataVar=true;
           ekleyici2.style.color=ekleyici2.style.backgroundColor;
-          ekleyici2.style.backgroundColor="rgb(255, 255, 200)";
+          ekleyici2.style.backgroundColor="rgb(255, 255, 50)";
         };
       }; if(eYazi3!=="+"){
         ekleyici3.onclick = null;
@@ -1697,11 +1697,23 @@
            }else{
           hataVar=true;
           ekleyici3.style.color=ekleyici3.style.backgroundColor;
-      ekleyici3.style.backgroundColor="rgb(255, 255, 200)";
+      ekleyici3.style.backgroundColor="rgb(255, 255, 50)";
            };
       }; if(eYazi4!=="+"){
         ekleyici4.onclick = null;
         ekleyici4.addEventListener("click", eklenemez);
+        if(eYazi1=="+" && eYazi3=="+" && eYazi5=="+" && eYazi8=="+"){
+  
+        }else if((eYazi4==eYazi1 || eRenk4==eRenk1)||
+                 (eYazi4==eYazi3 || eRenk4==eRenk3)||
+                 (eYazi4==eYazi5 || eRenk4==eRenk5)||
+                 (eYazi4==eYazi8 || eRenk4==eRenk8)){
+          
+        }else{
+          hataVar=true;
+  ekleyici4.style.color=ekleyici4.style.backgroundColor;
+          ekleyici4.style.backgroundColor="rgb(255, 255, 50)";
+        };
       };
         if(eYazi5!=="+"){
         ekleyici5.onclick = null;
