@@ -1718,6 +1718,18 @@
         if(eYazi5!=="+"){
         ekleyici5.onclick = null;
         ekleyici5.addEventListener("click", eklenemez);
+          if(!bugEngelleyici2){if(eYazi2=="+" && eYazi4=="+" && eYazi6=="+" && eYazi9=="+"){
+  bugEngelleyici2=true;
+        }else if((eYazi5==eYazi2 || eRenk5==eRenk2)||
+                 (eYazi5==eYazi4 || eRenk5==eRenk4)||
+                 (eYazi5==eYazi6 || eRenk5==eRenk6)||
+                 (eYazi5==eYazi9 || eRenk5==eRenk9)){
+          bugEngelleyici2=true;
+        }else{
+          hataVar=true;
+  ekleyici5.style.color=ekleyici5.style.backgroundColor;
+          ekleyici5.style.backgroundColor="rgb(255, 255, 50)";
+        };};
       }; if(eYazi6!=="+"){
         ekleyici6.onclick = null;
         ekleyici6.addEventListener("click", eklenemez);
