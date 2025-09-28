@@ -10,6 +10,7 @@
         font-family: arial, sans-serif;
         background-color: black;
         color: white;
+        font-size: 20px;
       }
       .butonlar{
         width: 100%;
@@ -636,9 +637,10 @@
         baslatici.style.display="none";
         rehber.style.display="none";
        const rehberYazisi=document.createElement("p");
-        rehberYazisi.innerHTML="Herhangi bir karta bastıktan sonra ekleyici (+ simgeli olan kartlar) tuşlara basılarak kart, oraya eklenir."+
+        rehberYazisi.innerHTML="Herhangi bir karta bastıktan sonra ekleyici(+ simgeli olan kartlar) tuşlara basılarak kart, oraya eklenir."+
           "<br>" +
           "Tabii, oraya kartı yerleştirmek için bir şart vardır.";
+        document.body.appendChild(rehberYazisi);
       };
     </script>
   </body>
