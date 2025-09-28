@@ -390,14 +390,15 @@
           });
         };
             };
-      function ekle(num){
+      function ekle(num){if(!hataVar){
         if(!secilenKart){alert("Kart seç"); return;};
               const hedefButon=document.getElementById(num);
         hedefButon.textContent=secilenKart.textContent;
         hedefButon.style.backgroundColor=secilenKart.style.backgroundColor;
         secilenKart.style.visibility="hidden";
         secilenKart=null;
-        hep();}; 
+        hep();};}; 
+      let hataVar=false;
       function hep(){
         let eRenk1 = ekleyici1.style.backgroundColor;
         let eYazi1 = ekleyici1.textContent;
@@ -431,7 +432,6 @@
         let kYazi3 = kose3.textContent;
         let kRenk2 = kose2.style.backgroundColor;
         let kYazi2 = kose2.textContent;
-        let hataVar= false;
       if(eYazi1!=="+"){
         ekleyici1.onclick = null;
         ekleyici1.addEventListener("click", eklenemez);
