@@ -185,7 +185,7 @@
       let deger1, deger2, deger3, deger4, deger5, deger6,
         deger7, deger8, deger9, deger10, deger11, deger12;
       const yeniOyun = document.getElementById("yeniOyun");
-      const rehber = document.getElementById("rehber");
+      const rehberId = document.getElementById("rehber");
       function baslat(){
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
@@ -635,7 +635,7 @@
         alert("Burası daha önceden dolduruldu!");
       }; function rehber(){
         baslatici.style.display="none";
-        rehber.style.display="none";
+        rehberId.style.display="none";
        const rehberYazisi=document.createElement("p");
         rehberYazisi.innerHTML="Herhangi bir karta bastıktan sonra ekleyici(+ simgeli olan kartlar) tuşlara basılarak kart, oraya eklenir."+
           "<br>" +
