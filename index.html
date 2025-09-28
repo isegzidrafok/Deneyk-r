@@ -486,6 +486,7 @@
         };
             };
       function ekle(num){
+        if(!secilenKart){alert("Kart seç");};
               const hedefButon=document.getElementById(num);
         secilenKart.textContent=hedefButon.textContent;
         secilenKart.style.backgroundColor=hedefButon.style.backgroundColor;
