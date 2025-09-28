@@ -111,31 +111,31 @@
   <body>
     <div id="oyunYeri">
       <div class="yerlesim"><button id="kose1" class="butonlar"></button></div>
-      <div class="yerlesim"><button onclick="ekle('1')" class="butonlar" id="ekleyici1">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('2')" class="butonlar" id="ekleyici2">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici1')" class="butonlar" id="ekleyici1">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici2')" class="butonlar" id="ekleyici2">+</button></div>
       <div class="yerlesim"><button id="kose2" class="butonlar"></button></div>
-      <div class="yerlesim"><button onclick="ekle('3')" class="butonlar" id="ekleyici3">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('4')" class="butonlar" id="ekleyici4">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('5')" class="butonlar" id="ekleyici5">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('6')" class="butonlar" id="ekleyici6">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('7')" class="butonlar" id="ekleyici7">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('8')" class="butonlar" id="ekleyici8">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('9')" class="butonlar" id="ekleyici9">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('10')" class="butonlar" id="ekleyici10">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici3')" class="butonlar" id="ekleyici3">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici4')" class="butonlar" id="ekleyici4">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici5')" class="butonlar" id="ekleyici5">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici6')" class="butonlar" id="ekleyici6">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici7')" class="butonlar" id="ekleyici7">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici8')" class="butonlar" id="ekleyici8">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici9')" class="butonlar" id="ekleyici9">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici10')" class="butonlar" id="ekleyici10">+</button></div>
       <div class="yerlesim"><button id="kose3" class="butonlar"></button></div>
-      <div class="yerlesim"><button onclick="ekle('11')" class="butonlar" id="ekleyici11">+</button></div>
-      <div class="yerlesim"><button onclick="ekle('12')" class="butonlar" id="ekleyici12">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici11')" class="butonlar" id="ekleyici11">+</button></div>
+      <div class="yerlesim"><button onclick="ekle('ekleyici12')" class="butonlar" id="ekleyici12">+</button></div>
       <div class="yerlesim"><button id="kose4" class="butonlar"></button></div>
     </div>
     <div id="el1">
-      <div class="yerlesim"><button onclick="kartlar('1')" id="kart1" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('2')" id="kart2" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('3')" id="kart3" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('4')" id="kart4" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('5')" id="kart5" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('6')" id="kart6" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('7')" id="kart7" class="kartlar"></button></div>
-      <div class="yerlesim"><button onclick="kartlar('8')" id="kart8" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart1')" id="kart1" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart2')" id="kart2" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart3')" id="kart3" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart4')" id="kart4" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart5')" id="kart5" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart6')" id="kart6" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart7')" id="kart7" class="kartlar"></button></div>
+      <div class="yerlesim"><button onclick="kartlar('kart8')" id="kart8" class="kartlar"></button></div>
     </div>
      <p id="hata">Hatalı yerleştirme!</p>
     <a href="https://isegzidrafok.github.io/Deneyk-r/" id="yeniOyun">
@@ -345,8 +345,8 @@
         };
       let secilenKart=null;
       function kartlar(id){
-        secilenKart=document.getElementById("kart"+id);
-        if(id==1){
+        secilenKart=document.getElementById(id);
+        if(id=="kart1"){
           birde1 = true;
           birde2 = false;
           birde3 = false;
@@ -355,7 +355,7 @@
           birde6 = false;
           birde7 = false;
           birde8 = false;
-        }else if(id==2){
+        }else if(id=="kart2"){
           birde1 = false;
           birde2 = true;
           birde3 = false;
@@ -364,7 +364,7 @@
           birde6 = false;
           birde7 = false;
           birde8 = false;
-        }else if(id==3){
+        }else if(id=="kart3"){
           birde1 = false;
           birde2 = false;
           birde3 = true;
@@ -373,7 +373,7 @@
           birde6 = false;
           birde7 = false;
           birde8 = false;
-        }else if(id==4){
+        }else if(id=="kart4"){
           birde1 = false;
           birde2 = false;
           birde3 = false;
@@ -382,7 +382,7 @@
           birde6 = false;
           birde7 = false;
           birde8 = false;
-        }else if(id==5){
+        }else if(id=="kart5"){
           birde1 = false;
           birde2 = false;
           birde3 = false;
@@ -391,7 +391,7 @@
           birde6 = false;
           birde7 = false;
           birde8 = false;
-        }else if(id==6){
+        }else if(id=="kart6"){
           birde1 = false;
           birde2 = false;
           birde3 = false;
@@ -400,7 +400,7 @@
           birde6 = true;
           birde7 = false;
           birde8 = false;
-        }else if(id==7){
+        }else if(id=="kart7"){
           birde1 = false;
           birde2 = false;
           birde3 = false;
@@ -486,7 +486,7 @@
         };
             };
       function ekle(num){
-              const hedefButon=document.getElementById("ekleyici"+num);
+              const hedefButon=document.getElementById(num);
         secilenKart.textContent=hedefButon.textContent;
         secilenKart.style.backgroundColor=hedefButon.style.backgroundColor;
         secilenKart.style.visibility="hidden";
