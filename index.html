@@ -252,15 +252,13 @@
       function kartlar(id){
         const arrayKart=[birde1, birde2, birde3,birde4,birde5,birde6,birde6,birde7,birde8];
         secilenKart=document.getElementById(id);
+        let x=[];
         if(id=="kart1"){
-          birde1 = true;
-          birde2 = false;
-          birde3 = false;
-          birde4 = false;
-          birde5 = false;
-          birde6 = false;
-          birde7 = false;
-          birde8 = false;
+          birde1=true;
+          x=arrayKart.filter(birde=>birde!=birde1);
+          x.forEach(birdeler=>{
+            birdeler=false;
+          });
         }else if(id=="kart2"){
           birde1 = false;
           birde2 = true;
