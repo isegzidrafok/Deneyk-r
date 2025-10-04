@@ -250,14 +250,15 @@
         };
       let secilenKart=null;
       function kartlar(id){
-        const arrayKart=["birde1", "birde2", "birde3","birde4","birde5","birde6","birde6","birde7","birde8"];
+        const arrayKart=["1", "2", "3","4","5","6","7","8"];
         secilenKart=document.getElementById(id);
         let x=[];
         if(id=="kart1"){
           birde1=true;
-          x=arrayKart.filter(birde=>birde!="birde1");
+          x=arrayKart.filter(birde=>birde!=="1");
           x.forEach(birdeler=>{
-            birdeler=false;
+            let etkilenen= "birde"+birdeler;
+            
           });
         }else if(id=="kart2"){
           birde2=true;
