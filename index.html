@@ -250,30 +250,30 @@
         };
       let secilenKart=null;
       function kartlar(id){
-        const arrayKart=[birde1, birde2, birde3,birde4,birde5,birde6,birde6,birde7,birde8];
+        const arrayKart=["birde1", "birde2", "birde3","birde4","birde5","birde6","birde6","birde7","birde8"];
         secilenKart=document.getElementById(id);
         let x=[];
         if(id=="kart1"){
           birde1=true;
-          x=arrayKart.filter(birde=>birde!=birde1);
+          x=arrayKart.filter(birde=>birde!="birde1");
           x.forEach(birdeler=>{
             birdeler=false;
           });
         }else if(id=="kart2"){
           birde2=true;
-          x=arrayKart.filter(birde=>birde!=birde2);
+          x=arrayKart.filter(birde=>birde!="birde2");
           x.forEach(birdeler=>{
             birdeler=false;
           });
         }else if(id=="kart3"){
           birde3=true;
-          x=arrayKart.filter(birde=>birde!=birde3);
+          x=arrayKart.filter(birde=>birde!="birde3");
           x.forEach(birdeler=>{
             birdeler=false;
           });
         }else if(id=="kart4"){
           birde4=true;
-          x=arrayKart.filter(birde=>birde!=birde4);
+          x=arrayKart.filter(birde=>birde!="birde4");
           x.forEach(birdeler=>{
             birdeler=false;
           });
