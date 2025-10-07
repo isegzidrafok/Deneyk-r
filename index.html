@@ -252,14 +252,16 @@
       function kartlar(id){
         const arrayKart=["1", "2", "3","4","5","6","7","8"];
         secilenKart=document.getElementById(id);
-        let x=[];
+        let falseler=[];
         if(id=="kart1"){
           birde1=true;
-          x=arrayKart.filter(birde=>birde!=="1");
-          x.forEach(birdeler=>{
-            let etkilenen= "birde"+birdeler;
-            
-          });
+          for(x=0;x<=7;i++){
+            if(arrayKart[x]!="1"){
+              falseler.push(arrayKart[x]);
+            };
+          }; for(i=0; i<=falseler.length; i++){
+            eval("birde" + falseler[i])=false;
+          };
         }else if(id=="kart2"){
           birde2=true;
           x=arrayKart.filter(birde=>birde!="birde2");
