@@ -189,7 +189,7 @@
       const yeniOyun = document.getElementById("yeniOyun");
       const rehberId = document.getElementById("rehber");
       function baslat(){
-        if(localStoge.getItem("fullscreen")=="dogru"){document.documentElement.requestFullscreen();};
+        if(localStorage.getItem("fullscreen")=="dogru"){document.documentElement.requestFullscreen();};
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
         rehberId.style.display = "none";
@@ -548,16 +548,16 @@
         const tamEkran = document.createElement("button");
         tamEkran.classList.add("baslatici");
         tamEkran.textContent="Tam ekrana al(önerilir)";
-        tamEkran.onclick='localStoge.setItem("fullscreen","dogru");
+        tamEkran.onclick=function(){localStorage.setItem("fullscreen","dogru");
         alert(`Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen`);
         tamEkran.style.display="none";
         const tamEkranCikis = document.createElement("button");
-        tamEkranCikis.classList.add("baslat");
+        tamEkranCikis.classList.add("baslatici");
         tamEkranCikis.textContent="Tam ekrandan çık";
-        tamEkranCikis.onclick=`localStoge.setItem("fullscreen","0");
+        tamEkranCikis.onclick=function(){localStorage.setItem("fullscreen","0");
         alert("Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen");
         tamEkranCikis.style.display="none";
-        tamEkran.style.display="block";`;';
+        tamEkran.style.display="block";};};
       };
     </script>
   </body>
