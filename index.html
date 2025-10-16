@@ -193,7 +193,7 @@
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
         rehberId.style.display = "none";
-        ayarlar.style.display = "none";
+        ayarlayici.style.display = "none";
         const renk1 = renkler[Math.floor(Math.random() * 4)];
         const sayi1 = sayilar[Math.floor(Math.random() * 10)];
         kose1.style.backgroundColor=renk1;
@@ -557,9 +557,8 @@
         tamEkranCikis.onclick=function(){localStorage.setItem("fullscreen","0");
         alert("Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen");
         tamEkranCikis.style.display="none";
-        tamEkran.style.display="block";};};
+        tamEkran.style.display="block";};}
       };
     </script>
   </body>
   </html>
-  
