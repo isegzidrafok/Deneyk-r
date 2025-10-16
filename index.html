@@ -546,12 +546,14 @@
         document.body.appendChild(rehberYazisi);
       }; function ayarla(){
         const tamEkran = document.createElement("button");
+        document.body.appendChild(tamEkran);
         tamEkran.classList.add("baslatici");
         tamEkran.textContent="Tam ekrana al(önerilir)";
         tamEkran.onclick=function(){localStorage.setItem("fullscreen","dogru");
         alert(`Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen`);
         tamEkran.style.display="none";
         const tamEkranCikis = document.createElement("button");
+        document.body.appendChild(tamEkranCikis);
         tamEkranCikis.classList.add("baslatici");
         tamEkranCikis.textContent="Tam ekrandan çık";
         tamEkranCikis.onclick=function(){localStorage.setItem("fullscreen","0");
