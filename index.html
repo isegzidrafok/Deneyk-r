@@ -144,6 +144,7 @@
     </a>
     <button onclick="baslat()" id="baslatici" class="baslatici">Oyunu başlat</button>
     <button onclick="rehber()" id="rehber" class="baslatici">Nasıl oynanır?</button>
+    <br><button onclick="ayarla()" id="ayarlayici" class="baslatici">Ayarlar</button>
     <script>
       const renkler = ["green", "blue", "red", "rgb(100, 100, 100)"];
       const sayilar = [1,2,3,4,5,6,7,8,9,10];
@@ -184,12 +185,15 @@
       let birde8 = false;
       let deger1, deger2, deger3, deger4, deger5, deger6,
         deger7, deger8, deger9, deger10, deger11, deger12;
+      const ayarlayici = document.getElementById("ayarlayici");
       const yeniOyun = document.getElementById("yeniOyun");
       const rehberId = document.getElementById("rehber");
       function baslat(){
+        if(localStoge.getItem("fullscreen")=="dogru"){document.documentElement.requestFullscreen();};
         baslatici.style.display = "none";
         oyunYeri.style.display = "inline-block";
         rehberId.style.display = "none";
+        ayarlar.style.display = "none";
         const renk1 = renkler[Math.floor(Math.random() * 4)];
         const sayi1 = sayilar[Math.floor(Math.random() * 10)];
         kose1.style.backgroundColor=renk1;
@@ -534,11 +538,26 @@
       }; function rehber(){
         baslatici.style.display="none";
         rehberId.style.display="none";
+        ayarlayici.style.display="none";
        const rehberYazisi=document.createElement("p");
         rehberYazisi.innerHTML="Herhangi bir karta bastıktan sonra ekleyici(+ simgeli olan kartlar) tuşlara basılarak kart, oraya eklenir."+
           "<br>" +
           "Tabii, oraya kartı yerleştirmek için bir şart vardır.";
         document.body.appendChild(rehberYazisi);
+      }; function ayarla(){
+        const tamEkran = document.createElement("button");
+        tamEkran.classList.add("baslatici");
+        tamEkran.textContent="Tam ekrana al(önerilir)";
+        tamEkran.onclick='localStoge.setItem("fullscreen","dogru");
+        alert(`Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen`);
+        tamEkran.style.display="none";
+        const tamEkranCikis = document.createElement("button");
+        tamEkranCikis.classList.add("baslat");
+        tamEkranCikis.textContent="Tam ekrandan çık";
+        tamEkranCikis.onclick=`localStoge.setItem("fullscreen","0");
+        alert("Kaydedildi. Sayfayı yenileyin ve oyun başlatın lütfen");
+        tamEkranCikis.style.display="none";
+        tamEkran.style.display="block";`;';
       };
     </script>
   </body>
